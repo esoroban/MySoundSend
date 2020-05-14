@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <style>
+      .reload {
+        font-size: 60px;
+        font-weight: bold;
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+        color: #CCC;
+      }
+      .demo {
+        text-align: center;
+      }
+      button {
+        display: inline-block;
+        padding: 10px;
+        margin: 20px auto;
+        font-size: 25px;
+      }
+      .close {position: absolute; bottom: 10px; left: 10px; font-size: 20px; opacity: 0.5}
+      * { padding: 0; margin: 0; }
+    </style>
+  </head>
+  <body>
+    <div class='demo'>
+      <button onClick='noise.run(10, "hello world how are you, I am well thanks for asking I hope all is well", null, false, 1)'>Slow Run (10 Baud)</button>
+      <button onClick='noise.run(200, "hello world how are you, I am well thanks for asking I hope all is well", null, false, 1)'>Fast Run (200 Baud)</button>
+    </div>
+    <script src="dist.js"></script>
+    <!-- <div class="close" onClick="window.location='https://samccone.github.io/noise/blank.html'">&#x2717;</div>
+    <div class="reload" onClick="window.location=window.location">&#x21bb;</div> -->
+  </body>
+</html>
